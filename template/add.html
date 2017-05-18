@@ -1,0 +1,17 @@
+<form role ='form' name="myform">
+    <div class="form-group">
+        <label for="bookName" class="control-label">图书名称</label>
+        <input type="text" class="form-control" id="bookName" ng-required="true" placeholder="请输入图书名称" ng-model="book.bookName" autocomplete="off">
+    </div>
+    <div class="form-group">
+        <label for="bookPrice" class="control-label">图书价格</label>
+        <input type="text" class="form-control" id="bookPrice" ng-required="true" placeholder="请输入图书价格" ng-model="book.bookPrice" autocomplete="off">
+    </div>
+    <div class="form-group">
+        <label for="bookCover" class="control-label">图书封面</label>
+        <input type="text" class="form-control" id="bookCover" ng-required="true" placeholder="请输入图书封面" ng-model="book.bookCover" autocomplete="off">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-info" ng-click="add()">添加图书</button>
+    </div>
+</form>

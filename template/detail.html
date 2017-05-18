@@ -1,0 +1,16 @@
+<div class="col-md-6 col-md-3-offset" >
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            {{book.bookName}}
+        </div>
+        <div class="panel-body text-center" style="height: 250px;width: 200px;">
+            <img ng-src="{{book.bookCover}}" alt="">
+        </div>
+        <div class="panel-footer">
+            {{book.bookPrice | currency:'RMB'}}
+
+            <button class="btn btn-danger" ng-click="remove()">删除</button>
+            <button class="btn btn-warning">修改</button>
+        </div>
+    </div>
+</div>
